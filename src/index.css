@@ -1,0 +1,5 @@
+body {
+    background-color: #101923; 
+    font-family: var(--font-b1-font-family, "Helvetica Neue");
+    font-weight: 350;
+}
