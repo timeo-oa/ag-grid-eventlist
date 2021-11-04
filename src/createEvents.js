@@ -25,11 +25,11 @@ Ex:
 export default function createEvents() {
     const event = {};
     //Generate unique track id
-    event['track-id'] = new Random().integer(100000000, 999999999);
+    event['track-id'] = new Random().integer(1000, 9999);
     event['status'] = 'New';
-    event['hits'] = new Random().integer(1,1000);
+    event['hits'] = new Random().integer(100,999);
     event['first-detect'] = `${new Random().integer(0,60)}:${new Random().integer(0,60)}:${new Random().integer(0,60)}`;
     event['duration'] = `${new Random().integer(0,15)}:${new Random().integer(0,60)}`;
-    event['location'] = `${new Random().integer(-99,99)}.${new Random().integer(0,99999)}°,${new Random().integer(-99,99)}.${new Random().integer(0,99999)}°`;
+    event['location'] = [`${new Random().integer(-99,99)}.${new Random().integer(0,99999)}°`,<br /> ,`${new Random().integer(-99,99)}.${new Random().integer(0,99999)}°`];
     return event;
 }
