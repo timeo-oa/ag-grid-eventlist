@@ -12,13 +12,15 @@ function App() {
       field: 'track-id',
       sortable: true,
       filter: true,
-      checkboxSelection: true
+      checkboxSelection: true,
+      width: 130,
     },
     {
       headerName: 'Status',
       field: 'status',
       sortable: true,
       filter: true,
+      width: 110,
       checkboxSelection: false,
       cellStyle: function (params) {
         //console.log('Params obj rowHeight is', params.data)
@@ -36,21 +38,24 @@ function App() {
       field: 'hits',
       sortable: true,
       filter: true,
-      checkboxSelection: false
+      checkboxSelection: false,
+      width: 100,
     },
     {
       headerName: 'First Detect',
       field: 'first-detect',
       sortable: true,
       filter: true,
-      checkboxSelection: false
+      checkboxSelection: false,
+      width: 140,
     },
     {
       headerName: 'Duration',
       field: 'duration',
       sortable: true,
       filter: true,
-      checkboxSelection: false
+      checkboxSelection: false,
+      width: 130,
     },
     {
       headerName: 'Location',
@@ -103,7 +108,7 @@ function App() {
       className="ag-theme-balham"
       style={{
         height: '700px',
-        width: '1600px'
+        width: '700px'
       }}
     >
       <AgGridReact
